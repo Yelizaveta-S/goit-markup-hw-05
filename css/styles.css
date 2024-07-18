@@ -490,7 +490,16 @@ footer .footer-span {
     position: fixed;
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
+
+    /* opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out; */
 }
+
+/* .modal-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
+} */
 
 .modal {
     width: 408px;
