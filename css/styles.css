@@ -551,15 +551,15 @@ footer .footer-span {
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
 
-    opacity: 0;
+    /* opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
-.modal-overlay.is-open {
+/* .modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
-}
+} */
 
 .modal {
     width: 408px;
@@ -573,38 +573,41 @@ footer .footer-span {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
+    padding: 72px 24px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-x {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .modal-close-btn {
+    position: absolute;
     width: 24px;
     height: 24px;
+    top: 24px;
+    right: 24px;
     border-radius: 50%;
     background-color: #e7e9fc;
     border: 1px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: bacground-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-x {
     fill: #2E2F42;
 }
 
-.modal-close-btn:hover {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
     background-color: #404bbf;
     transition: 250ms;
+    border: none;
 }
 
-.modal-close-btn:hover .button-x {
+.modal-close-btn:hover .button-x,
+.modal-close-btn:focus .button-x {
     fill: #fff;
     transition-duration: 250ms;
 }
@@ -612,12 +615,16 @@ footer .footer-span {
 .modal-title {
     font-size: 16px;
     text-align: center;
-    margin-top: 24px;
     margin-bottom: 16px;
+    line-height: 1.5;
 }
 
-.modal-field {
+.modal-field:not(:last-child) {
     margin-bottom: 8px;
+}
+
+.modal-field-last {
+    margin-bottom: 16px;
 }
 
 .modal-field-wrap {
