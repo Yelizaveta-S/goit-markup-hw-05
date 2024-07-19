@@ -551,15 +551,15 @@ footer .footer-span {
     top: 0;
     background-color: rgba(46, 47, 66, 0.4);
 
-    /* opacity: 0;
+    opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-overlay.is-open {
+.modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
-} */
+}
 
 .modal {
     width: 408px;
