@@ -422,9 +422,9 @@ img {
 
 /* footer start */
 
-footer {
+.footer {
     background: #2e2f42;
-    padding: 100px 159px 100px 156px;
+    padding: 100px 0px;
 }
 
 .section-footer {
@@ -449,10 +449,6 @@ footer .footer-span {
 
 .container-webstudio {
     margin-right: 120px;
-}
-
-.container-socialmedia {
-    width: 208px;
 }
 
 .footer-title {
@@ -486,8 +482,7 @@ footer .footer-span {
 }
 
 .container-subscribe {
-    width: 453px;
-    margin-left: 80px;
+    margin-left: auto;
 }
 
 .subscribe-form {
@@ -513,6 +508,10 @@ footer .footer-span {
 
 .sbs-input-label:focus {
     border-color: #31d0aa;
+}
+
+.sbs-input-label::placeholder {
+    color: #ffffff;
 }
 
 .sbs-btn {
